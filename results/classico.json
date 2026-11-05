@@ -1,0 +1,720 @@
+{
+  "features": [
+    "rms",
+    "pico",
+    "pico_a_pico",
+    "curtose",
+    "assimetria",
+    "fator_crista",
+    "fator_forma",
+    "fator_impulso",
+    "desvio",
+    "frequencia_pico",
+    "centroide_espectral",
+    "energia_0_1k",
+    "energia_1_3k",
+    "energia_3_6k",
+    "energia_6_10k",
+    "amp_bpfo",
+    "amp_bpfo_h12",
+    "amp_bpfi",
+    "amp_bpfi_h12",
+    "amp_bsf",
+    "amp_bsf_h12"
+  ],
+  "features_log10": [
+    "rms",
+    "pico",
+    "pico_a_pico",
+    "desvio",
+    "energia_0_1k",
+    "energia_1_3k",
+    "energia_3_6k",
+    "energia_6_10k",
+    "amp_bpfo",
+    "amp_bpfo_h12",
+    "amp_bpfi",
+    "amp_bpfi_h12",
+    "amp_bsf",
+    "amp_bsf_h12"
+  ],
+  "gridsearch": {
+    "KNN": {
+      "f1_macro_cv": 0.7603604340876939,
+      "melhores_params": {
+        "classifier__n_neighbors": 5,
+        "classifier__weights": "uniform",
+        "scaler": "StandardScaler"
+      },
+      "tempo_s": 33.09359312057495
+    },
+    "Árvore": {
+      "f1_macro_cv": 0.8144631523095134,
+      "melhores_params": {
+        "classifier__max_depth": null,
+        "classifier__min_samples_leaf": 1,
+        "scaler": "passthrough"
+      },
+      "tempo_s": 5.632021188735962
+    },
+    "RandomForest": {
+      "f1_macro_cv": 0.8939391886092581,
+      "melhores_params": {
+        "classifier__max_depth": null,
+        "classifier__min_samples_leaf": 1,
+        "classifier__n_estimators": 100,
+        "scaler": "passthrough"
+      },
+      "tempo_s": 45.460978269577026
+    },
+    "SVC": {
+      "f1_macro_cv": 0.8326519400867423,
+      "melhores_params": {
+        "classifier__C": 100,
+        "classifier__gamma": "scale",
+        "scaler": "StandardScaler"
+      },
+      "tempo_s": 50.27616286277771
+    }
+  },
+  "teste": {
+    "KNN": {
+      "f1_macro": 0.8423580916353324,
+      "acuracia_por_classe": {
+        "normal": 0.981,
+        "pista_externa": 0.8429,
+        "pista_interna": 0.8218,
+        "rolo": 1.0
+      },
+      "matriz_confusao": [
+        [
+          8244,
+          140,
+          19,
+          1
+        ],
+        [
+          13,
+          322,
+          26,
+          21
+        ],
+        [
+          0,
+          0,
+          83,
+          18
+        ],
+        [
+          0,
+          0,
+          0,
+          165
+        ]
+      ],
+      "classes": [
+        "normal",
+        "pista_externa",
+        "pista_interna",
+        "rolo"
+      ],
+      "TPR_falha": 0.9799382716049383,
+      "FPR_falha": 0.01903855306996668,
+      "report": {
+        "normal": {
+          "precision": 0.9984255782972024,
+          "recall": 0.9809614469300333,
+          "f1-score": 0.9896164695996639,
+          "support": 8404.0
+        },
+        "pista_externa": {
+          "precision": 0.696969696969697,
+          "recall": 0.8429319371727748,
+          "f1-score": 0.7630331753554502,
+          "support": 382.0
+        },
+        "pista_interna": {
+          "precision": 0.6484375,
+          "recall": 0.8217821782178217,
+          "f1-score": 0.7248908296943232,
+          "support": 101.0
+        },
+        "rolo": {
+          "precision": 0.8048780487804879,
+          "recall": 1.0,
+          "f1-score": 0.8918918918918919,
+          "support": 165.0
+        },
+        "accuracy": 0.9737074679628811,
+        "macro avg": {
+          "precision": 0.7871777060118468,
+          "recall": 0.9114188905801575,
+          "f1-score": 0.8423580916353324,
+          "support": 9052.0
+        },
+        "weighted avg": {
+          "precision": 0.9782708848653218,
+          "recall": 0.9737074679628811,
+          "f1-score": 0.975319445367062,
+          "support": 9052.0
+        }
+      }
+    },
+    "Árvore": {
+      "f1_macro": 0.6334854809227942,
+      "acuracia_por_classe": {
+        "normal": 0.9564,
+        "pista_externa": 0.3743,
+        "pista_interna": 0.9604,
+        "rolo": 0.5576
+      },
+      "matriz_confusao": [
+        [
+          8038,
+          341,
+          25,
+          0
+        ],
+        [
+          94,
+          143,
+          142,
+          3
+        ],
+        [
+          4,
+          0,
+          97,
+          0
+        ],
+        [
+          63,
+          10,
+          0,
+          92
+        ]
+      ],
+      "classes": [
+        "normal",
+        "pista_externa",
+        "pista_interna",
+        "rolo"
+      ],
+      "TPR_falha": 0.7515432098765432,
+      "FPR_falha": 0.04355069014754879,
+      "report": {
+        "normal": {
+          "precision": 0.9803634589584096,
+          "recall": 0.9564493098524512,
+          "f1-score": 0.9682587484189604,
+          "support": 8404.0
+        },
+        "pista_externa": {
+          "precision": 0.2894736842105263,
+          "recall": 0.3743455497382199,
+          "f1-score": 0.3264840182648402,
+          "support": 382.0
+        },
+        "pista_interna": {
+          "precision": 0.36742424242424243,
+          "recall": 0.9603960396039604,
+          "f1-score": 0.5315068493150685,
+          "support": 101.0
+        },
+        "rolo": {
+          "precision": 0.968421052631579,
+          "recall": 0.5575757575757576,
+          "f1-score": 0.7076923076923077,
+          "support": 165.0
+        },
+        "accuracy": 0.9246575342465754,
+        "macro avg": {
+          "precision": 0.6514206095561893,
+          "recall": 0.7121916641925973,
+          "f1-score": 0.6334854809227942,
+          "support": 9052.0
+        },
+        "weighted avg": {
+          "precision": 0.9441507709482937,
+          "recall": 0.9246575342465754,
+          "f1-score": 0.9315526777773049,
+          "support": 9052.0
+        }
+      }
+    },
+    "RandomForest": {
+      "f1_macro": 0.7212625092181874,
+      "acuracia_por_classe": {
+        "normal": 0.9681,
+        "pista_externa": 0.5785,
+        "pista_interna": 0.9604,
+        "rolo": 0.7394
+      },
+      "matriz_confusao": [
+        [
+          8136,
+          255,
+          13,
+          0
+        ],
+        [
+          25,
+          221,
+          133,
+          3
+        ],
+        [
+          0,
+          0,
+          97,
+          4
+        ],
+        [
+          36,
+          7,
+          0,
+          122
+        ]
+      ],
+      "classes": [
+        "normal",
+        "pista_externa",
+        "pista_interna",
+        "rolo"
+      ],
+      "TPR_falha": 0.9058641975308642,
+      "FPR_falha": 0.0318895763921942,
+      "report": {
+        "normal": {
+          "precision": 0.9925582530193974,
+          "recall": 0.9681104236078059,
+          "f1-score": 0.980181916752003,
+          "support": 8404.0
+        },
+        "pista_externa": {
+          "precision": 0.4575569358178054,
+          "recall": 0.5785340314136126,
+          "f1-score": 0.5109826589595375,
+          "support": 382.0
+        },
+        "pista_interna": {
+          "precision": 0.3991769547325103,
+          "recall": 0.9603960396039604,
+          "f1-score": 0.563953488372093,
+          "support": 101.0
+        },
+        "rolo": {
+          "precision": 0.9457364341085271,
+          "recall": 0.7393939393939394,
+          "f1-score": 0.8299319727891157,
+          "support": 165.0
+        },
+        "accuracy": 0.9474149359257623,
+        "macro avg": {
+          "precision": 0.69875714441956,
+          "recall": 0.8116086085048295,
+          "f1-score": 0.7212625092181874,
+          "support": 9052.0
+        },
+        "weighted avg": {
+          "precision": 0.9625065943342144,
+          "recall": 0.9474149359257623,
+          "f1-score": 0.9529984845274152,
+          "support": 9052.0
+        }
+      }
+    },
+    "SVC": {
+      "f1_macro": 0.6496876556818539,
+      "acuracia_por_classe": {
+        "normal": 0.91,
+        "pista_externa": 0.3848,
+        "pista_interna": 0.9406,
+        "rolo": 1.0
+      },
+      "matriz_confusao": [
+        [
+          7648,
+          742,
+          13,
+          1
+        ],
+        [
+          8,
+          147,
+          227,
+          0
+        ],
+        [
+          0,
+          0,
+          95,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          165
+        ]
+      ],
+      "classes": [
+        "normal",
+        "pista_externa",
+        "pista_interna",
+        "rolo"
+      ],
+      "TPR_falha": 0.9876543209876543,
+      "FPR_falha": 0.08995716325559258,
+      "report": {
+        "normal": {
+          "precision": 0.9989550679205852,
+          "recall": 0.9100428367444074,
+          "f1-score": 0.952428393524284,
+          "support": 8404.0
+        },
+        "pista_externa": {
+          "precision": 0.16535433070866143,
+          "recall": 0.38481675392670156,
+          "f1-score": 0.23131392604248624,
+          "support": 382.0
+        },
+        "pista_interna": {
+          "precision": 0.2835820895522388,
+          "recall": 0.9405940594059405,
+          "f1-score": 0.43577981651376146,
+          "support": 101.0
+        },
+        "rolo": {
+          "precision": 0.9593023255813954,
+          "recall": 1.0,
+          "f1-score": 0.9792284866468842,
+          "support": 165.0
+        },
+        "accuracy": 0.8898585947856827,
+        "macro avg": {
+          "precision": 0.6017984534407201,
+          "recall": 0.8088634125192624,
+          "f1-score": 0.6496876556818539,
+          "support": 9052.0
+        },
+        "weighted avg": {
+          "precision": 0.9550718537230459,
+          "recall": 0.8898585947856827,
+          "f1-score": 0.9167207910617474,
+          "support": 9052.0
+        }
+      }
+    }
+  },
+  "melhor_modelo_cv": "RandomForest",
+  "normal_previsto_falha_por_rolamento": {
+    "KNN": {
+      "T1-B1": 0.0,
+      "T1-B2": 0.0,
+      "T1-B3": 0.0465,
+      "T1-B4": 0.0024,
+      "T2-B1": 0.0,
+      "T2-B2": 0.0,
+      "T2-B3": 0.0,
+      "T2-B4": 0.0,
+      "T3-B1": 0.0,
+      "T3-B2": 0.0,
+      "T3-B3": 0.0903,
+      "T3-B4": 0.0
+    },
+    "Árvore": {
+      "T1-B1": 0.0,
+      "T1-B2": 0.0,
+      "T1-B3": 0.0611,
+      "T1-B4": 0.0,
+      "T2-B1": 0.0,
+      "T2-B2": 0.0,
+      "T2-B3": 0.0071,
+      "T2-B4": 0.0,
+      "T3-B1": 0.0,
+      "T3-B2": 0.0,
+      "T3-B3": 0.2192,
+      "T3-B4": 0.0
+    },
+    "RandomForest": {
+      "T1-B1": 0.0,
+      "T1-B2": 0.0,
+      "T1-B3": 0.0318,
+      "T1-B4": 0.0,
+      "T2-B1": 0.0,
+      "T2-B2": 0.0,
+      "T2-B3": 0.0,
+      "T2-B4": 0.0,
+      "T3-B1": 0.0,
+      "T3-B2": 0.0,
+      "T3-B3": 0.1644,
+      "T3-B4": 0.0
+    },
+    "SVC": {
+      "T1-B1": 0.0,
+      "T1-B2": 0.0,
+      "T1-B3": 0.0318,
+      "T1-B4": 0.0024,
+      "T2-B1": 0.0,
+      "T2-B2": 0.0071,
+      "T2-B3": 0.0,
+      "T2-B4": 0.0,
+      "T3-B1": 0.0,
+      "T3-B2": 0.0006,
+      "T3-B3": 0.4771,
+      "T3-B4": 0.0
+    }
+  },
+  "mutual_info": {
+    "energia_3_6k": 0.2053,
+    "rms": 0.1691,
+    "desvio": 0.1685,
+    "energia_1_3k": 0.1507,
+    "energia_6_10k": 0.1476,
+    "pico_a_pico": 0.1323,
+    "amp_bpfo_h12": 0.1294,
+    "pico": 0.1266,
+    "amp_bpfo": 0.1157,
+    "curtose": 0.1106,
+    "amp_bsf_h12": 0.1054,
+    "fator_forma": 0.0997,
+    "centroide_espectral": 0.0982,
+    "frequencia_pico": 0.0976,
+    "amp_bpfi_h12": 0.0859,
+    "amp_bsf": 0.0817,
+    "energia_0_1k": 0.0782,
+    "amp_bpfi": 0.0738,
+    "fator_crista": 0.0634,
+    "fator_impulso": 0.0597,
+    "assimetria": 0.0501
+  },
+  "importancia_rf": {
+    "energia_6_10k": 0.1446,
+    "amp_bsf_h12": 0.1309,
+    "pico": 0.0774,
+    "rms": 0.0725,
+    "energia_3_6k": 0.0708,
+    "energia_0_1k": 0.0595,
+    "amp_bsf": 0.0555,
+    "pico_a_pico": 0.055,
+    "amp_bpfo_h12": 0.0496,
+    "energia_1_3k": 0.0481,
+    "centroide_espectral": 0.0473,
+    "desvio": 0.0452,
+    "amp_bpfo": 0.0367,
+    "fator_forma": 0.027,
+    "curtose": 0.022,
+    "assimetria": 0.0156,
+    "frequencia_pico": 0.0144,
+    "amp_bpfi_h12": 0.0079,
+    "fator_crista": 0.0067,
+    "fator_impulso": 0.0067,
+    "amp_bpfi": 0.0065
+  },
+  "selectkbest_mutual_info": {
+    "RandomForest": {
+      "5": {
+        "f1_cv": 0.7985842049420299,
+        "f1_teste": 0.7258727601437788
+      },
+      "10": {
+        "f1_cv": 0.8620916251975729,
+        "f1_teste": 0.7604768843159051
+      },
+      "15": {
+        "f1_cv": 0.8929470219262011,
+        "f1_teste": 0.7360689176022737
+      },
+      "todas": {
+        "f1_cv": 0.8939391886092581,
+        "f1_teste": 0.7212625092181874
+      }
+    },
+    "SVC": {
+      "5": {
+        "f1_cv": 0.8209957112708228,
+        "f1_teste": 0.630003048267768
+      },
+      "10": {
+        "f1_cv": 0.8531443610273902,
+        "f1_teste": 0.7136144817436157
+      },
+      "15": {
+        "f1_cv": 0.8924973732062569,
+        "f1_teste": 0.6516585079100075
+      },
+      "todas": {
+        "f1_cv": 0.8326519400867423,
+        "f1_teste": 0.6496876556818539
+      }
+    }
+  },
+  "generalizacao_T3": {
+    "todas_features": {
+      "RandomForest": {
+        "acuracia_por_classe": {
+          "normal": 1.0,
+          "pista_externa": 0.1683
+        },
+        "f1_macro": 0.6359320571981295,
+        "TPR_falha": 0.17433414043583534,
+        "FPR_falha": 0.0,
+        "matriz_confusao": [
+          [
+            20684,
+            0,
+            0,
+            0
+          ],
+          [
+            682,
+            139,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "SVC": {
+        "acuracia_por_classe": {
+          "normal": 1.0,
+          "pista_externa": 0.1925
+        },
+        "f1_macro": 0.6536279685369301,
+        "TPR_falha": 0.20702179176755447,
+        "FPR_falha": 0.0,
+        "matriz_confusao": [
+          [
+            20684,
+            0,
+            0,
+            0
+          ],
+          [
+            655,
+            159,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "features_relativas": {
+      "RandomForest": {
+        "acuracia_por_classe": {
+          "normal": 1.0,
+          "pista_externa": 0.1707
+        },
+        "f1_macro": 0.6377023954591902,
+        "TPR_falha": 0.17433414043583534,
+        "FPR_falha": 0.0,
+        "matriz_confusao": [
+          [
+            20684,
+            0,
+            0,
+            0
+          ],
+          [
+            682,
+            141,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "SVC": {
+        "acuracia_por_classe": {
+          "normal": 0.9609,
+          "pista_externa": 0.1683
+        },
+        "f1_macro": 0.6282668509282484,
+        "TPR_falha": 0.41041162227602906,
+        "FPR_falha": 0.039064010829626766,
+        "matriz_confusao": [
+          [
+            19876,
+            0,
+            808,
+            0
+          ],
+          [
+            487,
+            139,
+            197,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "referencia_split_padrao_linhas_T3": {
+      "RandomForest": {
+        "normal": 0.9589,
+        "pista_externa": 0.4372
+      },
+      "SVC": {
+        "normal": 0.8806,
+        "pista_externa": 0.336
+      }
+    }
+  },
+  "identificacao_rolamento_acuracia_cv": {
+    "todas": 0.9856629691792941,
+    "relativas": 0.9349764992149868
+  },
+  "tempos_s": {
+    "gridsearch": 134.48410844802856,
+    "selecao_atributos": 113.79675626754761,
+    "identificacao_rolamento": 37.43173861503601,
+    "generalizacao_T3": 9.766344785690308
+  },
+  "tempo_total_s": 295.4789481163025
+}

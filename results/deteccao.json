@@ -1,0 +1,231 @@
+{
+  "D1": {
+    "mu_sigma": {
+      "rms": [
+        -1.1014882692420762,
+        0.14803526552288773
+      ],
+      "curtose": [
+        3.346183887693265,
+        0.3549513198040941
+      ]
+    },
+    "obs": "rms em log10; alarme se z(log RMS) > 3 ou z(curtose) > 3"
+  },
+  "D2": {
+    "k": 9,
+    "n_componentes_pca": 6,
+    "limiar_p99": 4.1992599590031485,
+    "silhuetas": {
+      "2": 0.3434152310501949,
+      "3": 0.38946552528005307,
+      "4": 0.3888968370511888,
+      "5": 0.42299755819674595,
+      "6": 0.44286668669823903,
+      "7": 0.45799095716467425,
+      "8": 0.48582144450941234,
+      "9": 0.4911891761791526,
+      "10": 0.44573502163127215,
+      "11": 0.4137124964785007,
+      "12": 0.3763656242222029
+    },
+    "inercias": {
+      "2": 254968.81213322858,
+      "3": 183912.063964952,
+      "4": 152685.20828179535,
+      "5": 122160.0982638435,
+      "6": 96333.43125154114,
+      "7": 77843.22544445732,
+      "8": 65395.17048578883,
+      "9": 57011.778767091244,
+      "10": 52919.78283408726,
+      "11": 48959.84753419196,
+      "12": 45855.04182296454
+    }
+  },
+  "D3": {
+    "D3_LogReg": {
+      "limiar_youden": 0.33883739164731497,
+      "TPR_cv": 0.9670184696569921,
+      "FPR_cv": 0.3805012224938875
+    },
+    "D3_RF": {
+      "limiar_youden": 0.305,
+      "TPR_cv": 0.8159630606860159,
+      "FPR_cv": 0.08068459657701711
+    }
+  },
+  "teste": {
+    "D1": {
+      "TPR": 0.46141975308641975,
+      "FPR": 0.015587815326035221,
+      "AUC": 0.9330686886315158,
+      "matriz_2x2 [[TN, FP], [FN, TP]]": [
+        [
+          8273,
+          131
+        ],
+        [
+          349,
+          299
+        ]
+      ],
+      "limiar": 3.0
+    },
+    "D2": {
+      "TPR": 0.9351851851851852,
+      "FPR": 0.013326987148976678,
+      "AUC": 0.9973333538996715,
+      "matriz_2x2 [[TN, FP], [FN, TP]]": [
+        [
+          8292,
+          112
+        ],
+        [
+          42,
+          606
+        ]
+      ],
+      "limiar": 4.1992599590031485
+    },
+    "D3_LogReg": {
+      "TPR": 0.9398148148148148,
+      "FPR": 0.2107329842931937,
+      "AUC": 0.9719779969561819,
+      "matriz_2x2 [[TN, FP], [FN, TP]]": [
+        [
+          6633,
+          1771
+        ],
+        [
+          39,
+          609
+        ]
+      ],
+      "limiar": 0.33883739164731497
+    },
+    "D3_RF": {
+      "TPR": 0.9938271604938271,
+      "FPR": 0.05295097572584483,
+      "AUC": 0.991319628072464,
+      "matriz_2x2 [[TN, FP], [FN, TP]]": [
+        [
+          7959,
+          445
+        ],
+        [
+          4,
+          644
+        ]
+      ],
+      "limiar": 0.305
+    }
+  },
+  "TPR_por_tipo_teste": {
+    "D1": {
+      "pista_externa": 0.42408376963350786,
+      "pista_interna": 0.8118811881188119,
+      "rolo": 0.3333333333333333
+    },
+    "D2": {
+      "pista_externa": 0.9450261780104712,
+      "pista_interna": 0.9702970297029703,
+      "rolo": 0.8909090909090909
+    },
+    "D3_LogReg": {
+      "pista_externa": 1.0,
+      "pista_interna": 1.0,
+      "rolo": 0.7636363636363637
+    },
+    "D3_RF": {
+      "pista_externa": 0.9895287958115183,
+      "pista_interna": 1.0,
+      "rolo": 1.0
+    }
+  },
+  "antecedencia": {
+    "T1-B3": {
+      "falha": "pista_interna",
+      "inicio_rotulado_idx": 1819,
+      "inicio_rotulado_h_antes_fim": 81.4,
+      "D1": {
+        "idx": 1819,
+        "h_antes_fim": 81.4,
+        "antes_do_corte_normal": false
+      },
+      "D2": {
+        "idx": 1819,
+        "h_antes_fim": 81.4,
+        "antes_do_corte_normal": false
+      }
+    },
+    "T1-B4": {
+      "falha": "rolo",
+      "inicio_rotulado_idx": 1605,
+      "inicio_rotulado_h_antes_fim": 123.7,
+      "D1": {
+        "idx": 335,
+        "h_antes_fim": 605.1,
+        "antes_do_corte_normal": true
+      },
+      "D2": {
+        "idx": 1448,
+        "h_antes_fim": 155.1,
+        "antes_do_corte_normal": false
+      }
+    },
+    "T2-B1": {
+      "falha": "pista_externa",
+      "inicio_rotulado_idx": 532,
+      "inicio_rotulado_h_antes_fim": 75.2,
+      "D1": {
+        "idx": 702,
+        "h_antes_fim": 46.8,
+        "antes_do_corte_normal": false
+      },
+      "D2": {
+        "idx": 538,
+        "h_antes_fim": 74.2,
+        "antes_do_corte_normal": false
+      }
+    },
+    "T3-B3": {
+      "falha": "pista_externa",
+      "inicio_rotulado_idx": 5497,
+      "inicio_rotulado_h_antes_fim": 144.7,
+      "D1": {
+        "idx": 6259,
+        "h_antes_fim": 10.7,
+        "antes_do_corte_normal": false
+      },
+      "D2": {
+        "idx": 6070,
+        "h_antes_fim": 42.2,
+        "antes_do_corte_normal": false
+      }
+    }
+  },
+  "alarmes_falsos_sadios": {
+    "D1": {
+      "antes_corte_total": 0.013782931543078018,
+      "antes_corte_so_teste": 0.017814726840855107,
+      "antes_corte_por_ensaio": {
+        "T1": 0.011721611721611722,
+        "T2": 0.16701902748414377,
+        "T3": 0.0001289241281505834
+      },
+      "depois_corte": 0.03207401696222051
+    },
+    "D2": {
+      "antes_corte_total": 0.0091547146780592,
+      "antes_corte_so_teste": 0.007465218866644045,
+      "antes_corte_por_ensaio": {
+        "T1": 0.001098901098901099,
+        "T2": 0.06835799859055673,
+        "T3": 0.005156965126023335
+      },
+      "depois_corte": 0.11087124132613724
+    }
+  },
+  "tempo_total_s": 44.37019443511963
+}

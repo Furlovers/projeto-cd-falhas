@@ -1,0 +1,13 @@
+# Pacotes usados pelo ECM514_Projeto2.ipynb (Python 3.12).
+# No Colab quase tudo já vem instalado; o notebook instala sozinho o que faltar.
+numpy
+pandas
+scipy
+scikit-learn==1.6.1   # versão usada para gerar os resultados de referência
+matplotlib
+seaborn
+tensorflow            # inclui o keras 3
+pyarrow
+joblib
+kagglehub             # download do IMS bruto (rota de reconstrução)
+jupytext              # ECM514_Projeto2.py <-> ECM514_Projeto2.ipynb

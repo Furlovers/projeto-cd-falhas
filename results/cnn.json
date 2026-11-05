@@ -1,0 +1,1339 @@
+{
+  "cache_mb": 164.06423950195312,
+  "cache_contagens": {
+    "teste": {
+      "normal": 608,
+      "pista_externa": 382,
+      "pista_interna": 101,
+      "rolo": 165
+    },
+    "treino": {
+      "normal": 1408,
+      "pista_externa": 894,
+      "pista_interna": 236,
+      "rolo": 386
+    }
+  },
+  "normalizacao": {
+    "escolhida": "global",
+    "comparacao_validacao_seed42": {
+      "global": {
+        "val_f1_macro_janela": 0.9237892093363167,
+        "val_acuracia_janela": 0.9168989547038328,
+        "val_f1_macro_snapshot": 0.9287231488406013,
+        "val_loss_min": 0.19973058998584747,
+        "epocas": 6,
+        "tempo_s": 60.350627183914185
+      },
+      "janela": {
+        "val_f1_macro_janela": 0.8828854999818836,
+        "val_acuracia_janela": 0.8703832752613241,
+        "val_f1_macro_snapshot": 0.9039876482562841,
+        "val_loss_min": 0.3211374878883362,
+        "epocas": 6,
+        "tempo_s": 51.38805079460144
+      }
+    }
+  },
+  "n_janelas": {
+    "treino": 23500,
+    "validacao": 5740,
+    "teste": 12560
+  },
+  "n_parametros": 9524,
+  "por_seed": [
+    {
+      "seed": 42,
+      "tempo_treino_s": 60.350627183914185,
+      "epocas": 6,
+      "melhor_epoca": 1,
+      "janela": {
+        "acuracia": 0.8902070063694267,
+        "f1_macro": 0.8841924563132613,
+        "acuracia_por_classe": {
+          "normal": 0.8319078947368421,
+          "pista_externa": 0.9065445026178011,
+          "pista_interna": 1.0,
+          "rolo": 1.0
+        },
+        "tpr": 0.9958333333333333,
+        "fpr": 0.1680921052631579,
+        "matriz_confusao": [
+          [
+            5058,
+            711,
+            297,
+            14
+          ],
+          [
+            27,
+            3463,
+            134,
+            196
+          ],
+          [
+            0,
+            0,
+            1010,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1650
+          ]
+        ]
+      },
+      "snapshot": {
+        "acuracia": 0.8893312101910829,
+        "f1_macro": 0.8836868896090346,
+        "acuracia_por_classe": {
+          "normal": 0.8273026315789473,
+          "pista_externa": 0.9109947643979057,
+          "pista_interna": 1.0,
+          "rolo": 1.0
+        },
+        "tpr": 1.0,
+        "fpr": 0.17269736842105263,
+        "matriz_confusao": [
+          [
+            503,
+            75,
+            30,
+            0
+          ],
+          [
+            0,
+            348,
+            13,
+            21
+          ],
+          [
+            0,
+            0,
+            101,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            165
+          ]
+        ]
+      },
+      "erros_por_grupo_snapshot": {
+        "T1_B1_normal": {
+          "n": 30,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 30
+          }
+        },
+        "T1_B2_normal": {
+          "n": 30,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 30
+          }
+        },
+        "T1_B3_normal": {
+          "n": 30,
+          "taxa_erro": 1.0,
+          "previsoes": {
+            "pista_interna": 30
+          }
+        },
+        "T1_B3_pista_interna": {
+          "n": 101,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "pista_interna": 101
+          }
+        },
+        "T1_B4_normal": {
+          "n": 30,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 30
+          }
+        },
+        "T1_B4_rolo": {
+          "n": 165,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "rolo": 165
+          }
+        },
+        "T2_B1_normal": {
+          "n": 11,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 11
+          }
+        },
+        "T2_B1_pista_externa": {
+          "n": 135,
+          "taxa_erro": 0.13333333333333333,
+          "previsoes": {
+            "pista_externa": 117,
+            "rolo": 13,
+            "pista_interna": 5
+          }
+        },
+        "T2_B2_normal": {
+          "n": 11,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 11
+          }
+        },
+        "T2_B3_normal": {
+          "n": 11,
+          "taxa_erro": 0.2727272727272727,
+          "previsoes": {
+            "normal": 8,
+            "pista_externa": 3
+          }
+        },
+        "T2_B4_normal": {
+          "n": 11,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 11
+          }
+        },
+        "T3_B1_normal": {
+          "n": 111,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 111
+          }
+        },
+        "T3_B2_normal": {
+          "n": 111,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 111
+          }
+        },
+        "T3_B3_normal": {
+          "n": 111,
+          "taxa_erro": 0.6486486486486487,
+          "previsoes": {
+            "pista_externa": 72,
+            "normal": 39
+          }
+        },
+        "T3_B3_pista_externa": {
+          "n": 247,
+          "taxa_erro": 0.06477732793522267,
+          "previsoes": {
+            "pista_externa": 231,
+            "rolo": 8,
+            "pista_interna": 8
+          }
+        },
+        "T3_B4_normal": {
+          "n": 111,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 111
+          }
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "tempo_treino_s": 62.59165048599243,
+      "epocas": 7,
+      "melhor_epoca": 2,
+      "janela": {
+        "acuracia": 0.8753980891719745,
+        "f1_macro": 0.8592390528425077,
+        "acuracia_por_classe": {
+          "normal": 0.8386513157894737,
+          "pista_externa": 0.8473821989528796,
+          "pista_interna": 0.999009900990099,
+          "rolo": 1.0
+        },
+        "tpr": 0.9981481481481481,
+        "fpr": 0.1613486842105263,
+        "matriz_confusao": [
+          [
+            5099,
+            655,
+            300,
+            26
+          ],
+          [
+            11,
+            3237,
+            470,
+            102
+          ],
+          [
+            1,
+            0,
+            1009,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1650
+          ]
+        ]
+      },
+      "snapshot": {
+        "acuracia": 0.8765923566878981,
+        "f1_macro": 0.8604660513716904,
+        "acuracia_por_classe": {
+          "normal": 0.8404605263157895,
+          "pista_externa": 0.8481675392670157,
+          "pista_interna": 1.0,
+          "rolo": 1.0
+        },
+        "tpr": 1.0,
+        "fpr": 0.15953947368421054,
+        "matriz_confusao": [
+          [
+            511,
+            66,
+            30,
+            1
+          ],
+          [
+            0,
+            324,
+            48,
+            10
+          ],
+          [
+            0,
+            0,
+            101,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            165
+          ]
+        ]
+      },
+      "erros_por_grupo_snapshot": {
+        "T1_B1_normal": {
+          "n": 30,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 30
+          }
+        },
+        "T1_B2_normal": {
+          "n": 30,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 30
+          }
+        },
+        "T1_B3_normal": {
+          "n": 30,
+          "taxa_erro": 1.0,
+          "previsoes": {
+            "pista_interna": 30
+          }
+        },
+        "T1_B3_pista_interna": {
+          "n": 101,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "pista_interna": 101
+          }
+        },
+        "T1_B4_normal": {
+          "n": 30,
+          "taxa_erro": 0.03333333333333333,
+          "previsoes": {
+            "normal": 29,
+            "rolo": 1
+          }
+        },
+        "T1_B4_rolo": {
+          "n": 165,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "rolo": 165
+          }
+        },
+        "T2_B1_normal": {
+          "n": 11,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 11
+          }
+        },
+        "T2_B1_pista_externa": {
+          "n": 135,
+          "taxa_erro": 0.17777777777777778,
+          "previsoes": {
+            "pista_externa": 111,
+            "pista_interna": 17,
+            "rolo": 7
+          }
+        },
+        "T2_B2_normal": {
+          "n": 11,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 11
+          }
+        },
+        "T2_B3_normal": {
+          "n": 11,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 11
+          }
+        },
+        "T2_B4_normal": {
+          "n": 11,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 11
+          }
+        },
+        "T3_B1_normal": {
+          "n": 111,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 111
+          }
+        },
+        "T3_B2_normal": {
+          "n": 111,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 111
+          }
+        },
+        "T3_B3_normal": {
+          "n": 111,
+          "taxa_erro": 0.5945945945945946,
+          "previsoes": {
+            "pista_externa": 66,
+            "normal": 45
+          }
+        },
+        "T3_B3_pista_externa": {
+          "n": 247,
+          "taxa_erro": 0.13765182186234817,
+          "previsoes": {
+            "pista_externa": 213,
+            "pista_interna": 31,
+            "rolo": 3
+          }
+        },
+        "T3_B4_normal": {
+          "n": 111,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 111
+          }
+        }
+      }
+    },
+    {
+      "seed": 44,
+      "tempo_treino_s": 92.18297266960144,
+      "epocas": 9,
+      "melhor_epoca": 4,
+      "janela": {
+        "acuracia": 0.8546974522292994,
+        "f1_macro": 0.8345445877994304,
+        "acuracia_por_classe": {
+          "normal": 0.8333881578947369,
+          "pista_externa": 0.787434554973822,
+          "pista_interna": 1.0,
+          "rolo": 1.0
+        },
+        "tpr": 0.9987654320987654,
+        "fpr": 0.16661184210526317,
+        "matriz_confusao": [
+          [
+            5067,
+            702,
+            295,
+            16
+          ],
+          [
+            8,
+            3008,
+            610,
+            194
+          ],
+          [
+            0,
+            0,
+            1010,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1650
+          ]
+        ]
+      },
+      "snapshot": {
+        "acuracia": 0.8487261146496815,
+        "f1_macro": 0.8303628630020037,
+        "acuracia_por_classe": {
+          "normal": 0.8223684210526315,
+          "pista_externa": 0.7853403141361257,
+          "pista_interna": 1.0,
+          "rolo": 1.0
+        },
+        "tpr": 1.0,
+        "fpr": 0.17763157894736842,
+        "matriz_confusao": [
+          [
+            500,
+            77,
+            30,
+            1
+          ],
+          [
+            0,
+            300,
+            65,
+            17
+          ],
+          [
+            0,
+            0,
+            101,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            165
+          ]
+        ]
+      },
+      "erros_por_grupo_snapshot": {
+        "T1_B1_normal": {
+          "n": 30,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 30
+          }
+        },
+        "T1_B2_normal": {
+          "n": 30,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 30
+          }
+        },
+        "T1_B3_normal": {
+          "n": 30,
+          "taxa_erro": 1.0,
+          "previsoes": {
+            "pista_interna": 30
+          }
+        },
+        "T1_B3_pista_interna": {
+          "n": 101,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "pista_interna": 101
+          }
+        },
+        "T1_B4_normal": {
+          "n": 30,
+          "taxa_erro": 0.03333333333333333,
+          "previsoes": {
+            "normal": 29,
+            "rolo": 1
+          }
+        },
+        "T1_B4_rolo": {
+          "n": 165,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "rolo": 165
+          }
+        },
+        "T2_B1_normal": {
+          "n": 11,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 11
+          }
+        },
+        "T2_B1_pista_externa": {
+          "n": 135,
+          "taxa_erro": 0.1925925925925926,
+          "previsoes": {
+            "pista_externa": 109,
+            "rolo": 13,
+            "pista_interna": 13
+          }
+        },
+        "T2_B2_normal": {
+          "n": 11,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 11
+          }
+        },
+        "T2_B3_normal": {
+          "n": 11,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 11
+          }
+        },
+        "T2_B4_normal": {
+          "n": 11,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 11
+          }
+        },
+        "T3_B1_normal": {
+          "n": 111,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 111
+          }
+        },
+        "T3_B2_normal": {
+          "n": 111,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 111
+          }
+        },
+        "T3_B3_normal": {
+          "n": 111,
+          "taxa_erro": 0.6936936936936937,
+          "previsoes": {
+            "pista_externa": 77,
+            "normal": 34
+          }
+        },
+        "T3_B3_pista_externa": {
+          "n": 247,
+          "taxa_erro": 0.22672064777327935,
+          "previsoes": {
+            "pista_externa": 191,
+            "pista_interna": 52,
+            "rolo": 4
+          }
+        },
+        "T3_B4_normal": {
+          "n": 111,
+          "taxa_erro": 0.0,
+          "previsoes": {
+            "normal": 111
+          }
+        }
+      }
+    }
+  ],
+  "resumo": {
+    "janela": {
+      "acuracia": {
+        "media": 0.8734341825902335,
+        "desvio": 0.017836053532214267
+      },
+      "f1_macro": {
+        "media": 0.859325365651733,
+        "desvio": 0.02482404679776117
+      },
+      "tpr": {
+        "media": 0.997582304526749,
+        "desvio": 0.0015457797532218772
+      },
+      "fpr": {
+        "media": 0.16535087719298247,
+        "desvio": 0.0035441439383539527
+      },
+      "acuracia_por_classe": {
+        "normal": {
+          "media": 0.8346491228070176,
+          "desvio": 0.0035441439383539527
+        },
+        "pista_externa": {
+          "media": 0.8471204188481675,
+          "desvio": 0.05955540532609343
+        },
+        "pista_interna": {
+          "media": 0.9996699669966996,
+          "desvio": 0.0005716339298907191
+        },
+        "rolo": {
+          "media": 1.0,
+          "desvio": 0.0
+        }
+      }
+    },
+    "snapshot": {
+      "acuracia": {
+        "media": 0.8715498938428875,
+        "desvio": 0.02076687915020135
+      },
+      "f1_macro": {
+        "media": 0.8581719346609096,
+        "desvio": 0.026735934283447983
+      },
+      "tpr": {
+        "media": 1.0,
+        "desvio": 0.0
+      },
+      "fpr": {
+        "media": 0.16995614035087722,
+        "desvio": 0.009352369577429806
+      },
+      "acuracia_por_classe": {
+        "normal": {
+          "media": 0.8300438596491228,
+          "desvio": 0.00935236957742985
+        },
+        "pista_externa": {
+          "media": 0.8481675392670157,
+          "desvio": 0.06282722513089001
+        },
+        "pista_interna": {
+          "media": 1.0,
+          "desvio": 0.0
+        },
+        "rolo": {
+          "media": 1.0,
+          "desvio": 0.0
+        }
+      }
+    }
+  },
+  "tempo_medio_por_seed_s": 71.70841677983601,
+  "fpr_normal_teste_ampliado": {
+    "n_snapshots": 7796,
+    "fpr_por_seed": [
+      0.17701385325808106,
+      0.1685479733196511,
+      0.17098512057465368
+    ],
+    "fpr_media": {
+      "media": 0.17218231571746193,
+      "desvio": 0.004358065848567513
+    },
+    "fpr_por_rolamento": {
+      "T1_B1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "T1_B2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "T1_B3": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "T1_B4": [
+        0.002638522427440633,
+        0.0395778364116095,
+        0.002638522427440633
+      ],
+      "T2_B1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "T2_B2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "T2_B3": [
+        0.13846153846153847,
+        0.0,
+        0.0
+      ],
+      "T2_B4": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "T3_B1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "T3_B2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "T3_B3": [
+        0.6819444444444445,
+        0.6388888888888888,
+        0.6618055555555555
+      ],
+      "T3_B4": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "mlp": {
+    "melhores_parametros": {
+      "mlp__alpha": "0.0001",
+      "mlp__hidden_layer_sizes": "(64, 32)"
+    },
+    "cv_f1_macro": 0.8736919888557022,
+    "teste": {
+      "acuracia": 0.8136942675159236,
+      "f1_macro": 0.7919559260850385,
+      "acuracia_por_classe": {
+        "normal": 0.8486842105263158,
+        "pista_externa": 0.6282722513089005,
+        "pista_interna": 1.0,
+        "rolo": 1.0
+      },
+      "tpr": 1.0,
+      "fpr": 0.1513157894736842,
+      "matriz_confusao": [
+        [
+          516,
+          84,
+          7,
+          1
+        ],
+        [
+          0,
+          240,
+          140,
+          2
+        ],
+        [
+          0,
+          0,
+          101,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          165
+        ]
+      ]
+    },
+    "fpr_normal_teste_completo": 0.14933365064255116,
+    "n_normal_teste_completo": 8404,
+    "tempo_grid_s": 62.27508211135864,
+    "erros_por_grupo": {
+      "T1_B1_normal": {
+        "n": 30,
+        "taxa_erro": 0.0,
+        "previsoes": {
+          "normal": 30
+        }
+      },
+      "T1_B2_normal": {
+        "n": 30,
+        "taxa_erro": 0.0,
+        "previsoes": {
+          "normal": 30
+        }
+      },
+      "T1_B3_normal": {
+        "n": 30,
+        "taxa_erro": 0.23333333333333334,
+        "previsoes": {
+          "normal": 23,
+          "pista_interna": 7
+        }
+      },
+      "T1_B3_pista_interna": {
+        "n": 101,
+        "taxa_erro": 0.0,
+        "previsoes": {
+          "pista_interna": 101
+        }
+      },
+      "T1_B4_normal": {
+        "n": 30,
+        "taxa_erro": 0.03333333333333333,
+        "previsoes": {
+          "normal": 29,
+          "rolo": 1
+        }
+      },
+      "T1_B4_rolo": {
+        "n": 165,
+        "taxa_erro": 0.0,
+        "previsoes": {
+          "rolo": 165
+        }
+      },
+      "T2_B1_normal": {
+        "n": 11,
+        "taxa_erro": 0.0,
+        "previsoes": {
+          "normal": 11
+        }
+      },
+      "T2_B1_pista_externa": {
+        "n": 135,
+        "taxa_erro": 0.18518518518518517,
+        "previsoes": {
+          "pista_externa": 110,
+          "pista_interna": 23,
+          "rolo": 2
+        }
+      },
+      "T2_B2_normal": {
+        "n": 11,
+        "taxa_erro": 0.0,
+        "previsoes": {
+          "normal": 11
+        }
+      },
+      "T2_B3_normal": {
+        "n": 11,
+        "taxa_erro": 0.0,
+        "previsoes": {
+          "normal": 11
+        }
+      },
+      "T2_B4_normal": {
+        "n": 11,
+        "taxa_erro": 0.0,
+        "previsoes": {
+          "normal": 11
+        }
+      },
+      "T3_B1_normal": {
+        "n": 111,
+        "taxa_erro": 0.0,
+        "previsoes": {
+          "normal": 111
+        }
+      },
+      "T3_B2_normal": {
+        "n": 111,
+        "taxa_erro": 0.0,
+        "previsoes": {
+          "normal": 111
+        }
+      },
+      "T3_B3_normal": {
+        "n": 111,
+        "taxa_erro": 0.7567567567567568,
+        "previsoes": {
+          "pista_externa": 84,
+          "normal": 27
+        }
+      },
+      "T3_B3_pista_externa": {
+        "n": 247,
+        "taxa_erro": 0.47368421052631576,
+        "previsoes": {
+          "pista_externa": 130,
+          "pista_interna": 117
+        }
+      },
+      "T3_B4_normal": {
+        "n": 111,
+        "taxa_erro": 0.0,
+        "previsoes": {
+          "normal": 111
+        }
+      }
+    }
+  },
+  "generalizacao_sem_T3": {
+    "descricao": "treino sem T3; teste = todos os snapshots T3 do cache (normal + pista externa)",
+    "n_teste_snapshots": 2306,
+    "por_seed": [
+      {
+        "seed": 42,
+        "snapshot": {
+          "acuracia": 0.660450997398092,
+          "f1_macro": 0.22893534218875822,
+          "acuracia_por_classe": {
+            "normal": 1.0,
+            "pista_externa": 0.05205811138014528,
+            "pista_interna": null,
+            "rolo": null
+          },
+          "tpr": 0.19612590799031476,
+          "fpr": 0.0,
+          "matriz_confusao": [
+            [
+              1480,
+              0,
+              0,
+              0
+            ],
+            [
+              664,
+              43,
+              118,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "seed": 43,
+        "snapshot": {
+          "acuracia": 0.6921075455333912,
+          "f1_macro": 0.26576538575104397,
+          "acuracia_por_classe": {
+            "normal": 1.0,
+            "pista_externa": 0.14043583535108958,
+            "pista_interna": null,
+            "rolo": null
+          },
+          "tpr": 0.19612590799031476,
+          "fpr": 0.0,
+          "matriz_confusao": [
+            [
+              1480,
+              0,
+              0,
+              0
+            ],
+            [
+              664,
+              116,
+              38,
+              8
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "seed": 44,
+        "snapshot": {
+          "acuracia": 0.6730268863833477,
+          "f1_macro": 0.2442833473453394,
+          "acuracia_por_classe": {
+            "normal": 1.0,
+            "pista_externa": 0.08716707021791767,
+            "pista_interna": null,
+            "rolo": null
+          },
+          "tpr": 0.19612590799031476,
+          "fpr": 0.0,
+          "matriz_confusao": [
+            [
+              1480,
+              0,
+              0,
+              0
+            ],
+            [
+              664,
+              72,
+              84,
+              6
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "resumo_snapshot": {
+      "recall_pista_externa": {
+        "media": 0.09322033898305086,
+        "desvio": 0.044498731112564416
+      },
+      "fpr": {
+        "media": 0.0,
+        "desvio": 0.0
+      },
+      "tpr": {
+        "media": 0.19612590799031474,
+        "desvio": 3.3993498887762956e-17
+      }
+    }
+  },
+  "tempo_total_s": 710.5740451812744,
+  "diagnostico_fp_seed42": {
+    "descricao": "fração de janelas previstas como falha em TODOS os snapshots Normal do rolamento (seed 42); figura cnn_fp_no_tempo.png",
+    "T1_B3": {
+      "treino": 0.809,
+      "teste": 0.983,
+      "decis": [
+        0.02,
+        0.91,
+        0.98,
+        0.95,
+        0.91,
+        0.93,
+        0.97,
+        0.98,
+        0.98,
+        0.98
+      ],
+      "causa": "degrau de RMS 0,131 -> 0,159 no idx 156, logo após buraco de 148 h no T1 (remontagem/religamento); a CNN com normalização global usa o nível absoluto como atalho"
+    },
+    "T1_B4": {
+      "treino": 0.004,
+      "teste": 0.049
+    },
+    "T3_B3": {
+      "treino": 0.224,
+      "teste": 0.611,
+      "decis": [
+        0.16,
+        0.15,
+        0.21,
+        0.21,
+        0.07,
+        0.19,
+        0.58,
+        0.57,
+        0.65,
+        0.61
+      ]
+    }
+  },
+  "nota_contagem_falhas": "o cache tem 2164 snapshots de falha (1276 pe + 337 pi + 551 rolo), não 1964",
+  "ablacao_zscore_janela": {
+    "descricao": "mesma CNN (seed 42) com z-score por janela em vez da normalização global; FPR por rolamento no Normal de teste do cache (e no Normal de teste completo, se o bruto estiver disponível)",
+    "seed": 42,
+    "degrau_rms_T1B3": {
+      "rms_idx155": 0.13096528065227106,
+      "rms_idx156": 0.1597282069568686,
+      "gap_h": 148.42583333333334,
+      "rms_mediana_10_155": 0.13130463409014084,
+      "rms_mediana_156_1374": 0.15950409309133926
+    },
+    "validacao": {
+      "global": {
+        "val_f1_macro_janela": 0.9237892093363167,
+        "val_acuracia_janela": 0.9168989547038328,
+        "val_f1_macro_snapshot": 0.9287231488406013,
+        "val_loss_min": 0.19973058998584747,
+        "epocas": 6,
+        "tempo_s": 60.350627183914185
+      },
+      "janela": {
+        "val_f1_macro_janela": 0.8828854999818836,
+        "val_acuracia_janela": 0.8703832752613241,
+        "val_f1_macro_snapshot": 0.9039876482562841,
+        "val_loss_min": 0.3211374878883362,
+        "epocas": 6,
+        "tempo_s": 51.38805079460144
+      }
+    },
+    "teste_snapshot": {
+      "global": {
+        "acuracia": 0.8893312101910829,
+        "f1_macro": 0.8836868896090346,
+        "acuracia_por_classe": {
+          "normal": 0.8273026315789473,
+          "pista_externa": 0.9109947643979057,
+          "pista_interna": 1.0,
+          "rolo": 1.0
+        },
+        "tpr": 1.0,
+        "fpr": 0.17269736842105263,
+        "matriz_confusao": [
+          [
+            503,
+            75,
+            30,
+            0
+          ],
+          [
+            0,
+            348,
+            13,
+            21
+          ],
+          [
+            0,
+            0,
+            101,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            165
+          ]
+        ]
+      },
+      "janela": {
+        "acuracia": 0.8630573248407644,
+        "f1_macro": 0.8712755731767294,
+        "acuracia_por_classe": {
+          "normal": 0.7401315789473685,
+          "pista_externa": 0.9633507853403142,
+          "pista_interna": 1.0,
+          "rolo": 1.0
+        },
+        "tpr": 0.9876543209876543,
+        "fpr": 0.2598684210526316,
+        "matriz_confusao": [
+          [
+            450,
+            106,
+            41,
+            11
+          ],
+          [
+            8,
+            368,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            101,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            165
+          ]
+        ]
+      }
+    },
+    "fpr_por_rolamento_teste_cache": {
+      "global": {
+        "T1_B1": 0.0,
+        "T1_B2": 0.0,
+        "T1_B3": 1.0,
+        "T1_B4": 0.0,
+        "T2_B1": 0.0,
+        "T2_B2": 0.0,
+        "T2_B3": 0.2727272727272727,
+        "T2_B4": 0.0,
+        "T3_B1": 0.0,
+        "T3_B2": 0.0,
+        "T3_B3": 0.6486486486486487,
+        "T3_B4": 0.0
+      },
+      "janela": {
+        "T1_B1": 0.0,
+        "T1_B2": 0.0,
+        "T1_B3": 1.0,
+        "T1_B4": 0.36666666666666664,
+        "T2_B1": 0.0,
+        "T2_B2": 0.0,
+        "T2_B3": 1.0,
+        "T2_B4": 0.0,
+        "T3_B1": 0.0,
+        "T3_B2": 0.0,
+        "T3_B3": 0.954954954954955,
+        "T3_B4": 0.0
+      }
+    },
+    "T1B3_frac_janelas_falha_normal_cache": {
+      "global": {
+        "antes_idx156": 0.018181818181818184,
+        "depois_idx156": 0.9625
+      },
+      "janela": {
+        "antes_idx156": 0.8363636363636364,
+        "depois_idx156": 0.9977272727272727
+      }
+    },
+    "fpr_normal_teste_completo": {
+      "global": {
+        "n_snapshots": 7796,
+        "fpr": 0.17701385325808106,
+        "fpr_por_rolamento": {
+          "T1_B1": 0.0,
+          "T1_B2": 0.0,
+          "T1_B3": 1.0,
+          "T1_B4": 0.002638522427440633,
+          "T2_B1": 0.0,
+          "T2_B2": 0.0,
+          "T2_B3": 0.13846153846153847,
+          "T2_B4": 0.0,
+          "T3_B1": 0.0,
+          "T3_B2": 0.0,
+          "T3_B3": 0.6819444444444445,
+          "T3_B4": 0.0
+        }
+      },
+      "janela": {
+        "n_snapshots": 7796,
+        "fpr": 0.2582093381221139,
+        "fpr_por_rolamento": {
+          "T1_B1": 0.0,
+          "T1_B2": 0.0,
+          "T1_B3": 1.0,
+          "T1_B4": 0.37994722955145116,
+          "T2_B1": 0.023076923076923078,
+          "T2_B2": 0.0,
+          "T2_B3": 0.9461538461538461,
+          "T2_B4": 0.0,
+          "T3_B1": 0.0,
+          "T3_B2": 0.0,
+          "T3_B3": 0.9472222222222222,
+          "T3_B4": 0.0
+        }
+      }
+    }
+  }
+}
