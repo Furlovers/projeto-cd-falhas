@@ -12,6 +12,7 @@ Projeto da disciplina ECM514 – Ciência de Dados (IMT). A partir de sinais rea
 | Notebook com as análises (executável no Colab) | [`ECM514_Projeto2.ipynb`](ECM514_Projeto2.ipynb) · [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Furlovers/projeto-cd-falhas/blob/main/ECM514_Projeto2.ipynb) |
 | Dados brutos | [IMS Bearing Dataset (Kaggle)](https://www.kaggle.com/datasets/vinayak123tyagi/bearing-dataset), baixado automaticamente pelo notebook |
 | Dados processados (features + sinais usados pela CNN) | [`cache_ecm514.zip`](https://github.com/Furlovers/projeto-cd-falhas/releases/download/v1.0-dados/cache_ecm514.zip) (release `v1.0-dados`, 108 MB) |
+| Relatório técnico | [`Relatorio_Tecnico.docx`](Relatorio_Tecnico.docx) |
 | Resultados (métricas e figuras) | [`results/`](results/) |
 
 ## Técnicas
@@ -60,6 +61,7 @@ As seeds são fixas (`random_state=42`). Execuções repetidas no mesmo ambiente
 ```
 ECM514_Projeto2.ipynb   notebook com as análises e saídas
 ECM514_Projeto2.py      mesmo notebook em formato texto (jupytext)
+Relatorio_Tecnico.docx  relatório técnico do trabalho
 src/                    funções de apoio: leitura (io_ims), frequências de defeito (bearing), features,
                         rótulos (labels), detecção (detect), classificadores (classic), CNN (cnn), cache e gráficos
 results/                métricas (JSON), tabela-resumo e figuras
