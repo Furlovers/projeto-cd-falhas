@@ -14,6 +14,7 @@ Projeto da disciplina ECM514 – Ciência de Dados (IMT). A partir de sinais rea
 | Dados processados (features + sinais usados pela CNN) | [`cache_ecm514.zip`](https://github.com/Furlovers/projeto-cd-falhas/releases/download/v1.0-dados/cache_ecm514.zip) (release `v1.0-dados`, 108 MB) |
 | Relatório técnico | [`Relatorio_Tecnico.docx`](Relatorio_Tecnico.docx) |
 | Resultados (métricas e figuras) | [`results/`](results/) |
+| Link Vídeo Youtube | https://youtu.be/nEFErnTXIk8 |
 
 ## Técnicas
 
